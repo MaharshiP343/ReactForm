@@ -2,48 +2,85 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="ParentFormContainer">
+    <div className="container">
+      <h2>Form in React</h2>
       <form>
-        <label>First name:</label>
-        <input type="text" />
+        <div className="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter First Name" />
+        </div>
 
-        <label>Last name:</label>
-        <input type="text" />
+        <div className="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter Last Name" />
+        </div>
 
-        <label>Contact Number</label>
-        <input type="text" />
+        <div className="form-group">
+          <label>Enter Email</label>
+          <input type="email" placeholder="Enter email" />
+        </div>
 
-        <label>Email Address</label>
-        <input type="text" />
+        <div className="form-group">
+          <label>Contact</label>
+          <input type="text" placeholder="Enter Mobile number" />
+        </div>
 
-        <label>Gender</label>
-        <input type="radio" />
-        <input type="radio" />
+        <div className="form-group">
+          <label>Gender</label>
+          <div className="radio-group">
+            <input type="radio" name="gender" id="male" />
+            <label htmlFor="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label htmlFor="female">Female</label>
+            <input type="radio" name="gender" id="other" />
+            <label htmlFor="other">Other</label>
+          </div>
+        </div>
 
-        <label>Your Best Subjects</label>
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
+        <div className="form-group">
+          <label>Your best Subject</label>
+          <div className="checkbox-group">
+            <input type="checkbox" id="english" />
+            <label htmlFor="english">English</label>
+            <input type="checkbox" id="maths" />
+            <label htmlFor="maths">Maths</label>
+            <input type="checkbox" id="physics" />
+            <label htmlFor="physics">Physics</label>
+          </div>
+        </div>
 
-        <label>Upload Resume</label>
-        <input type="file" />
+        <div className="form-group">
+          <label>Upload Resume</label>
+          <input type="file" />
+        </div>
 
-        <label>Enter URL</label>
-        <input type="text" />
+        <div className="form-group">
+          <label>Enter URL</label>
+          <input type="text" placeholder="Enter URL" />
+        </div>
 
-        <label>Select Your Choice</label>
-        <select id="cars" name="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
-        </select>
+        <div className="form-group">
+          <label>Select your choice</label>
+          <select>
+            <option>Select your Ans</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
 
-        <label>About</label>
-        <input type="textarea" />
-        <input type="Submit" />
-        <input type="Reset" />
+        <div className="form-group">
+          <label>About</label>
+          <textarea placeholder="About yourself"></textarea>
+        </div>
+
+        <div className="button-group">
+          <button type="reset" className="reset-btn">
+            Reset
+          </button>
+          <button type="submit" className="submit-btn">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );

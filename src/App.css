@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: lightcyan;
+  margin: 0;
+}
+* {
+  padding: 0px;
+}
+.container {
+  background: white;
+  border-radius: 10px;
+  border: black solid 2px;
+  padding: 16px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+h2 {
+  text-align: center;
+  color: green;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea,
+select {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 0;
+}
+/* select {
+  width: 95%;
+} */
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.radio-group input,
+.checkbox-group input {
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  width: 45%;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin: 3%;
+}
+.reset-btn {
+  background-color: green;
+}
+
+.submit-btn {
+  background-color: green;
+}
