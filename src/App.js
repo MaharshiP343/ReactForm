@@ -13,6 +13,7 @@ function App() {
     sub: [],
     url: "",
     choice: "",
+    about: "",
   });
 
   const handleChange = (e) => {
@@ -241,7 +242,7 @@ function App() {
               }); //set obj value for fname
             }}
           >
-            <option value="Option 0 ">Select your Ans</option>
+            <option value="Option 0 ">Option 0</option>
             <option value="Option 1">Option 1</option>
             <option value="Option 2">Option 2</option>
           </select>
@@ -249,7 +250,19 @@ function App() {
 
         <div className="form-group">
           <label>About</label>
-          <textarea placeholder="About yourself"></textarea>
+          <textarea
+            placeholder="About yourself"
+            value={formData.about}
+            onChange={(e) => {
+              console.log("abt:", e.target.value);
+              setFormData((curr) => {
+                return {
+                  ...curr,
+                  about: e.target.value,
+                };
+              }); //set obj value for fname
+            }}
+          ></textarea>
         </div>
 
         <div className="button-group">
